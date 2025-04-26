@@ -1,0 +1,415 @@
+.all{
+    background-color: grey;
+}
+.body{
+    background-image: linear-gradient(to bottom right, #4CAF50, #2196F3);
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+/* style de la page header */
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.header .entete{
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+.header .present{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+.header .present p{
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+.header .present p:nth-child(2){
+    font-size: 25px;
+}
+.header .present p:nth-child(1){
+    font-size: 15px;
+}
+.header .present p:nth-child(3){
+    font-size: 20px;
+}
+.header .present h5{
+    margin-bottom: 0;
+}
+.header .present h2{
+    margin-bottom: 0;
+}
+.header .liens{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.header .liens a{
+    margin: 5px;
+    text-decoration: none;
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #2196F3;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+.header .liens a:hover {
+    color: #FF5722;
+    color: white;
+}
+.header .img{
+    margin: 10px;
+    position: relative;
+    left: 200px;
+    top: 80px;
+    text-align: center;
+}
+.header .img img{
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+@media ( max-width: 440px){
+    .header .present{
+        top: 0;
+        left: 0;
+    }
+    .header .img{
+        left: 0;
+        top: 0;
+    }
+    .header .img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+/* style de la navbar */
+.navbar{
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navbar nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+    border: 1px solid beige;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.navbar nav a{
+    margin: 4px 20px 4px 20px;
+    padding: 7px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid linear-gradient(to bottom, grey, beige);
+    border-radius: 50%;
+    transition: all 1s ease;
+    scroll-behavior: smooth;
+}
+.navbar nav a:hover{
+    background-color: #2196F3;
+    color: white;
+}
+
+@media (max-width: 440px){
+    .navbar nav a{
+        font-size: 20px;
+        margin: 5px 12px 5px 12px;
+    }
+}
+/* style d'appropos */
+.propo{
+    margin-top: 40px;
+    transition: all 1s ease;
+}
+.spani{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.spani .span{
+    width: 60%;
+    height: 4px;
+    background-color: black;
+}
+.propo .texte p {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    color: #333333; /* Texte gris foncé */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.propo h1{
+    text-align: center;
+}
+.propo .box{
+    width: 80px;
+    height: 80px;
+    border: 1px solid beige;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: gray;
+}
+.Box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.propo .box p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.propo .texte{
+    display: flex;
+    justify-content: center;
+}
+.propo .texte p{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    width: 450px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.1);
+}
+/* style de la section competence */
+.compet{
+    margin: 100px 20px 20px 20px;
+}
+.compet .list h1{
+    text-align: center;
+}
+.compet .boxes{
+    text-align: center;
+    display: flex;
+}
+.compet .div div{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 40%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+.compet .boxes span{
+    margin: 10px 5px 15px 15px;
+    color: white;
+    font-size: 15px;
+}
+.compet  i{
+    margin: 10px;
+    font-size: 30px;
+}
+#c1{
+    color: skyblue;
+}
+#c2{
+    color: rgba(255,0,0,0.5);
+}
+#c3{
+    color: yellow;
+}
+#c4{
+    color: skyblue;
+}
+#c5{
+    color:  rgba(255,0,0,0.5);
+}
+@media(max-width: 440px){
+    .compet .boxes .div div{
+        width: 100%;
+        padding: 5px;
+    }
+    .compet span{
+        margin: 10px 5px 10px 10px;
+    }
+}
+@media(min-width: 440px){
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 600px;
+        position: relative;
+        left: 25%;
+        border: 1px solid beige;
+        box-shadow: 0 0 60px rgba(0,0,0,1);
+    }
+    .header .img{
+        position: relative;
+        left: 5%;
+        top: 0;
+    }
+    .header .present{
+        position: relative;
+        left: 15%;
+        top: 0;
+    }
+    .compet .boxes div{
+        width: 100%;
+    }
+}
+@media(min-width: 440px) and (max-width: 835px){
+    .body{
+        left: 15%;
+    }
+}
+@media(min-width: 440px) and (max-width: 768px){
+    .body{
+        left: 12%;
+    }
+}
+@media(min-width: 440px) and (max-width: 884px){
+    .body{
+        left: 17%;
+    }
+}
+/* style de la topbar */
+.topbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+.topbar div {
+    margin-left: 220px;
+}
+.topbar i{
+    margin: 20px 10px 10px 10px;    
+}
+.topbar h2{
+    margin: 5px 10px 5px 5px;
+}
+/* style des realisations  */
+.real{
+    width: 93%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+.real p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.real i{
+    color: skyblue;
+    font-size: 25px;
+}
+.real h1{
+    text-align: center;
+}
+.real img{
+    border: 1px solid grey;
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+}
+.real .reel{
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
+    color: white;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* style de lespace contact */
+.contact{
+    width: 90%;
+    padding: 10px;
+    margin: 25px 5px 25px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact h2{
+    width: 100%;
+    text-align: center;
+}
+.contact a{
+    text-decoration: none;
+    margin: 17px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.contact a:hover {
+    background-color: #FF5722; /* Couleur d'accentuation */
+    color: white;
+}
+.contact .cont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact .form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.form input{
+    padding: 10px;
+    width: 70%;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333333;
+    border: 1px solid #FFFFFF;
+}
+.form button{
+    background-color: #4CAF50; /* Bouton vert */
+    color: white;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 25px;
+    padding: 10px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.form button:hover {
+    background-color: #2196F3;
+}
+.end{
+    padding-bottom: 40px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+    
