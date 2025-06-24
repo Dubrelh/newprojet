@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect } from "react";
 import HEADER from "./composants/header";
 import NAVBAR from "./composants/navbar";
 import APPROPOS from "./composants/a_propo";
@@ -8,6 +9,11 @@ import TOPBAR from "./composants/topbar";
 import CONTACT from "./composants/contact";
 
 export default function App() {
+
+  useEffect(()=>{
+  document.title = "Portfolio, henry";
+  })
+
   return(
     <div class="all">
       <div class="body">
@@ -19,7 +25,7 @@ export default function App() {
        <REALISATIONS />
        <CONTACT />
        <div class="end">
-           <p>&copy; Henry kemeni.Tout drois reservé.</p>
+           <p>&copy; Henry kemeni.Tout drois reservés.</p>
        </div>
       </div>
     </div>

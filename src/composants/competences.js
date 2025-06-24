@@ -21,13 +21,13 @@ export default function COPETENCES() {
               </span>
               <span>
                 <i class="fab fa-css3-alt" id="c2"></i>
-                <p>Java script</p>
+                <p>Css</p>
                 <p>50%</p>
               </span>
               <span>
                 <i class="fab fa-js-square" id="c3"></i>
                 <p>Java script</p>
-                <p>50%</p>
+                <p>70%</p>
               </span>
               <span>
                 <i class="fab fa-react" id="c4"></i>
@@ -37,7 +37,12 @@ export default function COPETENCES() {
               <span>
                 <i class="fas fa-database" id="c5"></i>
                 <p>Sql</p>
-                <p>40%</p>
+                <p>50%</p>
+              </span>
+              <span>
+                <i class="fab fa-node-js" id="c6"></i>
+                <p>node js</p>
+                <p>30%</p>
               </span>
             </div>
           </div>

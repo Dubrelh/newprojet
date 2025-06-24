@@ -18,7 +18,7 @@ export default function APPROPOS(){
            </div>
            <div class="texte">
             <p> Agé de 19 ans je suis etudiant en ingenieurie logiciel  en premiere anné à l'institue universitaire de la cote ,
-                je suis passionné des nouvelles technologies et et plus precisément dans le domaine de l'IA et de la cybert securité
+                je suis passionné des nouvelles technologies et plus precisément dans le domaine de l'IA et de la cybert securité
                 , j'aime travailler en groupe car c'est enrichissant de nouveau savoir .
             </p>
            </div>

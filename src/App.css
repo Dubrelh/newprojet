@@ -77,7 +77,7 @@
     text-align: center;
 }
 .header .img img{
-    border: 3px solid #FFFFFF;
+    border: 3px solid transparent;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -96,6 +96,7 @@
     }
     
 }
+
 /* style de la navbar */
 .navbar{
     position: fixed;
@@ -136,6 +137,7 @@
         margin: 5px 12px 5px 12px;
     }
 }
+
 /* style d'appropos */
 .propo{
     margin-top: 40px;
@@ -164,11 +166,12 @@
 .propo .box{
     width: 80px;
     height: 80px;
-    border: 1px solid beige;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px black;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .Box{
     display: flex;
@@ -190,9 +193,11 @@
     text-align: center;
     width: 450px;
     padding: 10px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.3);
 }
+
 /* style de la section competence */
+
 .compet{
     margin: 100px 20px 20px 20px;
 }
@@ -205,7 +210,8 @@
 }
 .compet .div div{
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px black;
     border-radius: 7px;
     width: 40%;
     background-color: rgba(0,0,0,0.5);
@@ -237,6 +243,9 @@
 }
 #c5{
     color:  rgba(255,0,0,0.5);
+}
+#c6{
+    color:  green;
 }
 @media(max-width: 440px){
     .compet .boxes .div div{
@@ -288,6 +297,7 @@
         left: 17%;
     }
 }
+
 /* style de la topbar */
 .topbar{
     position: fixed;
@@ -305,42 +315,66 @@
 .topbar h2{
     margin: 5px 10px 5px 5px;
 }
+
 /* style des realisations  */
+
 .real{
-    width: 93%;
-    padding: 10px;
-    text-align: center;
-    margin-top: 15px;
-}
-.real p{
-    font-size: 20px;
-    font-weight: bold;
-}
-.real i{
-    color: skyblue;
-    font-size: 25px;
-}
-.real h1{
-    text-align: center;
-}
-.real img{
-    border: 1px solid grey;
-    border-radius: 7px;
-    width: 100%;
-    height: auto;
-}
-.real .reel{
-    padding: 10px;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
-    color: white;
-    border: 1px solid #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
 }
+
+.realisation{
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px black;
+    padding: 10px;
+    padding-bottom: 15px;
+    margin: 10px;
+}
+
+.realisation img{
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.realisation a{
+    border-radius: 5em;
+    font-size: 0.8em;
+    border: 2px solid #008346;
+    background-color: transparent ;
+    color: #008346;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.realisation a:hover{
+    transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom right, #4CAF50, #2196F3);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.realisation h2{
+    color: white;
+    margin: 15px;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.realisation h3{
+    color: white;
+    margin: 15px;
+}
+
 /* style de lespace contact */
+
 .contact{
     width: 90%;
     padding: 10px;
